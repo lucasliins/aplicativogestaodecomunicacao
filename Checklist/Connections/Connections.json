@@ -1,0 +1,34 @@
+{
+  "6a1a4e06-8f57-49df-ba6d-a486088e885a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1601/1.0.1601.3047/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://lanlinkonline.sharepoint.com/sites/ArquiteturadeSolues-Vendas": {
+        "dataSources": {
+          "Checklist - Active Directory": {
+            "tableName": "ec92c4ec-c56b-49ba-addc-5101bbe71f1c"
+          },
+          "Checklist - Migração 365": {
+            "tableName": "ca087c07-29dc-4d89-8e34-66438af3b1f4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Checklist - Migração 365",
+      "Checklist - Active Directory"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6a1a4e06-8f57-49df-ba6d-a486088e885a"
+  }
+}

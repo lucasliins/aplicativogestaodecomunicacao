@@ -1,0 +1,1044 @@
+"'Edição Active Directory' As screen.'phoneDetailEditLayout_ver3.0'":
+    BackgroundImage: =Imagem1
+    ImagePosition: =ImagePosition.Fill
+
+    RectQuickActionBar3_1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    IconCancel1_1 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Cancel
+        OnSelect: =ResetForm(EditForm1_1);Back()
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancelar item"
+        Width: =88
+        ZIndex: =2
+
+    IconAccept1_1 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm1_1)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Enviar item"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =3
+
+    LblAppName3_1 As label:
+        Fill: =RGBA(58, 58, 58, 0)
+        Height: =88
+        Size: =27
+        Text: ="Checklist - Active Directory"
+        Width: =Parent.Width - IconCancel1_1.Width - IconAccept1_1.Width
+        Wrap: =false
+        X: =80
+        ZIndex: =4
+
+    EditForm1_1 As form:
+        DataSource: =[@'Checklist - Active Directory']
+        Height: =Parent.Height - EditForm1_1.Y
+        Item: =BrowseGallery1_1.Selected
+        OnSuccess: =Back()
+        Width: =Parent.Width
+        Y: =RectQuickActionBar3_1.Height
+        ZIndex: =5
+
+        Title_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Title")
+            Required: =true
+            Update: =DataCardValue53.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey53 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue53 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey53.Y + DataCardKey53.Height + 5
+                ZIndex: =2
+
+            ErrorMessage31 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue53.Y + DataCardValue53.Height
+                ZIndex: =3
+
+            StarVisible31 As label:
+                Align: =Align.Center
+                Height: =DataCardKey53.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey53.Y
+                ZIndex: =4
+
+        "'Número da ON: _DataCard2' As typedDataCard.numberEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="N_x00fa_merodaON_x003a_"
+            Default: |-
+                =ThisItem.'ON: '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"N_x00fa_merodaON_x003a_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue32.Text)
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey32 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue32 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey32.Y + DataCardKey32.Height + 5
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue32.Y + DataCardValue32.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: =DataCardKey32.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey32.Y
+                ZIndex: =4
+
+        "'Descrição do Projeto: _DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Descri_x00e7__x00e3_odoProjeto_x"
+            Default: |-
+                =ThisItem.'Descrição detalhada da oportunidade:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Descri_x00e7__x00e3_odoProjeto_x")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Descri_x00e7__x00e3_odoProjeto_x")
+            Required: =false
+            Update: =DataCardValue40.Text
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey40 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue40 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+                ZIndex: =2
+
+            ErrorMessage28 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue40.Y + DataCardValue40.Height
+                ZIndex: =3
+
+            StarVisible28 As label:
+                Align: =Align.Center
+                Height: =DataCardKey40.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey40.Y
+                ZIndex: =4
+
+        "'Empresa Contratante: _DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmpresaContratante_x003a_"
+            Default: |-
+                =ThisItem.'Cliente: '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"EmpresaContratante_x003a_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "EmpresaContratante_x003a_")
+            Required: =false
+            Update: =DataCardValue41.Text
+            Width: =640
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey41 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue41 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey41.Y + DataCardKey41.Height + 5
+                ZIndex: =2
+
+            ErrorMessage29 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue41.Y + DataCardValue41.Height
+                ZIndex: =3
+
+            StarVisible29 As label:
+                Align: =Align.Center
+                Height: =DataCardKey41.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey41.Y
+                ZIndex: =4
+
+        "'Arquiteto Responsável _DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ArquitetoRespons_x00e1_vel"
+            Default: =ThisItem.'Arquiteto Responsável '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"ArquitetoRespons_x00e1_vel")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue54.Selected
+            Width: =640
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue54 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@'Checklist - Active Directory'].'Arquiteto Responsável ')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: =Choices('Checklist - Active Directory'.'Arquiteto Responsável ',DataCardValue54.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+            ErrorMessage32 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue54.Y + DataCardValue54.Height
+                ZIndex: =3
+
+            StarVisible32 As label:
+                Align: =Align.Center
+                Height: =DataCardKey54.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey54.Y
+                ZIndex: =4
+
+        "'Gerente de contas responsável: _DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Gerentedecontasrespons_x00e1_vel"
+            Default: |-
+                =ThisItem.'Gerente de contas responsável: '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Gerentedecontasrespons_x00e1_vel")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue55.Selected
+            Width: =640
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: |-
+                    =Choices([@'Checklist - Active Directory'].'Gerente de contas responsável: ')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: |-
+                    =Choices('Checklist - Active Directory'.'Gerente de contas responsável: ',DataCardValue55.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+            ErrorMessage33 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue55.Y + DataCardValue55.Height
+                ZIndex: =3
+
+            StarVisible33 As label:
+                Align: =Align.Center
+                Height: =DataCardKey55.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey55.Y
+                ZIndex: =4
+
+        "'Qual licença(s) será atribuida?_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Quallicen_x00e7_a_x0028_s_x0029_"
+            Default: |-
+                =ThisItem.'Tipo de licença(s) a ser atribuida:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Quallicen_x00e7_a_x0028_s_x0029_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Quallicen_x00e7_a_x0028_s_x0029_")
+            Required: =false
+            Update: =DataCardValue42.Text
+            Width: =640
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey42 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue42 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
+                ZIndex: =2
+
+            ErrorMessage30 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue42.Y + DataCardValue42.Height
+                ZIndex: =3
+
+            StarVisible30 As label:
+                Align: =Align.Center
+                Height: =DataCardKey42.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey42.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui interesse em mais alguma funcionalidade M365? Se sim, qual? _DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiinteres0"
+            Default: =ThisItem.'Cliente possui interesse em mais alguma funcionalidade M365? Se sim, qual? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiinteres0")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Aempresacontratantepossuiinteres0")
+            Required: =false
+            Update: =DataCardValue33.Text
+            Width: =640
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey33 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue33 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey33.Y + DataCardKey33.Height + 5
+                ZIndex: =2
+
+            ErrorMessage21 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue33.Y + DataCardValue33.Height
+                ZIndex: =3
+
+            StarVisible21 As label:
+                Align: =Align.Center
+                Height: =DataCardKey33.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey33.Y
+                ZIndex: =4
+
+        "'A empresa contratante já possui experiencia em Active Directory? _DataCard1' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantej_x00e1_possu"
+            Default: =ThisItem.'Cliente já possui experiencia em Active Directory? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantej_x00e1_possu")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue34.Value
+            Width: =640
+            X: =0
+            Y: =8
+            ZIndex: =1
+
+            DataCardKey34 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue34 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey34.Y + DataCardKey34.Height + 5
+                ZIndex: =2
+
+            ErrorMessage22 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue34.Y + DataCardValue34.Height
+                ZIndex: =3
+
+            StarVisible22 As label:
+                Align: =Align.Center
+                Height: =DataCardKey34.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey34.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui algum software legado para ser adicionado a solução? _DataCard1' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuialgumso"
+            Default: =ThisItem.'A empresa contratante possui algum software legado para ser adicionado a solução? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantepossuialgumso")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue35.Value
+            Width: =640
+            X: =0
+            Y: =9
+            ZIndex: =1
+
+            DataCardKey35 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue35 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+                ZIndex: =2
+
+            ErrorMessage23 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue35.Y + DataCardValue35.Height
+                ZIndex: =3
+
+            StarVisible23 As label:
+                Align: =Align.Center
+                Height: =DataCardKey35.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey35.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui ambiente Cloud no qual utilizará Active Directory?_DataCard1' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiambient0"
+            Default: =ThisItem.'Cliente possui ambiente Cloud no qual utilizará Active Directory?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiambient0")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue36.Value
+            Width: =640
+            X: =0
+            Y: =10
+            ZIndex: =1
+
+            DataCardKey36 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue36 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                ZIndex: =2
+
+            ErrorMessage24 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue36.Y + DataCardValue36.Height
+                ZIndex: =3
+
+            StarVisible24 As label:
+                Align: =Align.Center
+                Height: =DataCardKey36.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey36.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui ambiente ON-Premisse no qual utilizará Active Directory?_DataCard1' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiambient"
+            Default: =ThisItem.'Cliente possui ambiente ON-Premisse no qual utilizará Active Directory?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiambient")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue37.Value
+            Width: =640
+            X: =0
+            Y: =11
+            ZIndex: =1
+
+            DataCardKey37 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue37 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey37.Y + DataCardKey37.Height + 5
+                ZIndex: =2
+
+            ErrorMessage25 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue37.Y + DataCardValue37.Height
+                ZIndex: =3
+
+            StarVisible25 As label:
+                Align: =Align.Center
+                Height: =DataCardKey37.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey37.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui interesse em funcionalidades de Segurança, Governança ou conformidade AD? _DataCard1' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiinteres"
+            Default: =ThisItem.'Cliente possui interesse em funcionalidades de Segurança, Governança ou conformidade AD? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiinteres")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue38.Value
+            Width: =640
+            X: =0
+            Y: =12
+            ZIndex: =1
+
+            DataCardKey38 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue38 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey38.Y + DataCardKey38.Height + 5
+                ZIndex: =2
+
+            ErrorMessage26 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue38.Y + DataCardValue38.Height
+                ZIndex: =3
+
+            StarVisible26 As label:
+                Align: =Align.Center
+                Height: =DataCardKey38.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey38.Y
+                ZIndex: =4
+
+        Anexos_DataCard2 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Anexos
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue30.Attachments
+            Width: =640
+            X: =0
+            Y: =13
+            ZIndex: =1
+
+            DataCardKey30 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue30 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =520
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey30.Y + DataCardKey30.Height + 5
+                ZIndex: =2
+
+            ErrorMessage18 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue30.Y + DataCardValue30.Height
+                ZIndex: =3
+
+            StarVisible18 As label:
+                Align: =Align.Center
+                Height: =DataCardKey30.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey30.Y
+                ZIndex: =4
+

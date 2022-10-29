@@ -1,0 +1,1191 @@
+"'Edição M365' As screen.'phoneDetailEditLayout_ver3.0'":
+    BackgroundImage: =Imagem1
+    ImagePosition: =ImagePosition.Fill
+
+    RectQuickActionBar3 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    IconCancel1 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Cancel
+        OnSelect: =ResetForm(EditForm1);Back()
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancelar item"
+        Width: =88
+        ZIndex: =2
+
+    IconAccept1 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(EditForm1)
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Enviar item"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =3
+
+    LblAppName3 As label:
+        Fill: =RGBA(58, 58, 58, 0)
+        Height: =88
+        Size: =27
+        Text: ="Checklist - Migração 365"
+        Width: =Parent.Width - IconCancel1.Width - IconAccept1.Width
+        Wrap: =false
+        X: =80
+        ZIndex: =4
+
+    EditForm1 As form:
+        DataSource: =[@'Checklist - Migração 365']
+        Height: =Parent.Height - EditForm1.Y
+        Item: =BrowseGallery1.Selected
+        NumberOfColumns: =2
+        OnSuccess: =Back()
+        Width: =Parent.Width
+        Y: =RectQuickActionBar3.Height
+        ZIndex: =5
+
+        Title_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Title"
+            Default: =ThisItem.Title
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Title")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Migração 365'], DataSourceInfo.MaxLength, "Title")
+            Required: =true
+            Update: =DataCardValue9.Text
+            Width: =568
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey9 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue9.Y + DataCardValue9.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey9.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey9.Y
+                ZIndex: =4
+
+        "'Número da ON: _DataCard1' As typedDataCard.numberEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="N_x00fa_merodaON_x003a_"
+            Default: |-
+                =ThisItem.'ON: '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"N_x00fa_merodaON_x003a_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue31.Text)
+            Width: =568
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey31 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue31 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey31.Y + DataCardKey31.Height + 5
+                ZIndex: =2
+
+            ErrorMessage19 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue31.Y + DataCardValue31.Height
+                ZIndex: =3
+
+            StarVisible19 As label:
+                Align: =Align.Center
+                Height: =DataCardKey31.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey31.Y
+                ZIndex: =4
+
+        "'Empresa Contratante_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmpresaContratante"
+            Default: |-
+                =ThisItem.'Cliente:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"EmpresaContratante")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Migração 365'], DataSourceInfo.MaxLength, "EmpresaContratante")
+            Required: =false
+            Update: =DataCardValue11.Text
+            Width: =568
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey11 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue11 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue11.Y + DataCardValue11.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey11.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey11.Y
+                ZIndex: =4
+
+        "'Descrição:_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Descri_x00e7__x00e3_o"
+            Default: |-
+                =ThisItem.'Descrição detalhada da oportunidade:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Descri_x00e7__x00e3_o")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Migração 365'], DataSourceInfo.MaxLength, "Descri_x00e7__x00e3_o")
+            Required: =false
+            Update: =DataCardValue10.Text
+            Width: =568
+            WidthFit: =false
+            X: =1
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue10.Y + DataCardValue10.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey10.Y
+                ZIndex: =4
+
+        "'Gerente de Contas Responsável:_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Gerente_x0020_de_x0020_Contas_x0"
+            Default: |-
+                =ThisItem.'Gerente de Contas:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Gerente_x0020_de_x0020_Contas_x0")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue28.Selected
+            Width: =568
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey28 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue28 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: |-
+                    =Choices([@'Checklist - Migração 365'].'Gerente de Contas:')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: |-
+                    =Choices('Checklist - Migração 365'.'Gerente de Contas:',DataCardValue28.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey28.Y + DataCardKey28.Height + 5
+                ZIndex: =2
+
+            ErrorMessage16 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue28.Y + DataCardValue28.Height
+                ZIndex: =3
+
+            StarVisible16 As label:
+                Align: =Align.Center
+                Height: =DataCardKey28.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey28.Y
+                ZIndex: =4
+
+        "'Arquiteto Responsável:_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Arquiteto_x0020_Respons_x00e1_ve"
+            Default: |-
+                =ThisItem.'Arquiteto Responsável:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Arquiteto_x0020_Respons_x00e1_ve")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue26.Selected
+            Width: =568
+            X: =1
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey26 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue26 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: |-
+                    =Choices([@'Checklist - Migração 365'].'Arquiteto Responsável:')
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["DisplayName"]
+                SearchItems: |-
+                    =Choices('Checklist - Migração 365'.'Arquiteto Responsável:',DataCardValue26.SearchText)
+                SelectMultiple: =false
+                Size: =21
+                Template: =ListItemTemplate.Person
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                ZIndex: =2
+
+            ErrorMessage14 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue26.Y + DataCardValue26.Height
+                ZIndex: =3
+
+            StarVisible14 As label:
+                Align: =Align.Center
+                Height: =DataCardKey26.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey26.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui interesse em mais alguma funcionalidade M365? Se sim, qual? _DataCard5' As typedDataCard.comboBoxMultiSelectEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiinteres"
+            Default: =ThisItem.'A empresa contratante possui interesse em mais alguma funcionalidade M365? Se sim, qual? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiinteres")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue63.SelectedItems
+            Width: =568
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey63 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue63 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                Items: =Choices([@'Checklist - Migração 365'].Aempresacontratantepossuiinteres)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Checklist - Migração 365'.Aempresacontratantepossuiinteres,DataCardValue63.SearchText)
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey63.Y + DataCardKey63.Height + 5
+                ZIndex: =2
+
+            ErrorMessage38 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue63.Y + DataCardValue63.Height
+                ZIndex: =3
+
+            StarVisible38 As label:
+                Align: =Align.Center
+                Height: =DataCardKey63.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey63.Y
+                ZIndex: =4
+
+        "'Qual licença(s) será atribuida? _DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Quallicen_x00e7_a_x0028_s_x0029_"
+            Default: |-
+                =ThisItem.'Tipo de Licença(s) a ser atribuida: '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Quallicen_x00e7_a_x0028_s_x0029_")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Migração 365'], DataSourceInfo.MaxLength, "Quallicen_x00e7_a_x0028_s_x0029_")
+            Required: =false
+            Update: =DataCardValue12.Text
+            Width: =568
+            X: =1
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue12 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue12.Y + DataCardValue12.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey12.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+        "'Quantas contas serão migradas? _DataCard2' As typedDataCard.numberEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Quantascontasser_x00e3_omigradas"
+            Default: =ThisItem.'Quantas contas serão migradas? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Quantascontasser_x00e3_omigradas")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue13.Text)
+            Width: =568
+            X: =0
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue13 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                Height: =70
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue13.Y + DataCardValue13.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey13.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey13.Y
+                ZIndex: =4
+
+        "'Qual solução em caixas de email a empresa contratante utiliza atualmente? _DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Qualsolu_x00e7__x00e3_oemcaixasd"
+            Default: =ThisItem.'Qual solução em caixas de email a empresa contratante utiliza atualmente? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Qualsolu_x00e7__x00e3_oemcaixasd")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Checklist - Migração 365'], DataSourceInfo.MaxLength, "Qualsolu_x00e7__x00e3_oemcaixasd")
+            Required: =false
+            Update: =DataCardValue23.Text
+            Width: =568
+            X: =1
+            Y: =4
+            ZIndex: =1
+
+            DataCardKey23 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue23 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                ZIndex: =2
+
+            ErrorMessage11 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue23.Y + DataCardValue23.Height
+                ZIndex: =3
+
+            StarVisible11 As label:
+                Align: =Align.Center
+                Height: =DataCardKey23.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey23.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui ambiente On-premise?_DataCard2' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiambient"
+            Default: =ThisItem.'A empresa contratante possui ambiente On-premise?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiambient")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue14.Value
+            Width: =568
+            X: =0
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey14 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue14 As toggleSwitch:
+                AccessibleLabel: =
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =94
+                ZIndex: =2
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue14.Y + DataCardValue14.Height
+                ZIndex: =3
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey14.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey14.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui ambiente Cloud?_DataCard2' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiambient0"
+            Default: =ThisItem.'A empresa contratante possui ambiente Cloud?'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiambient0")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue15.Value
+            Width: =568
+            X: =1
+            Y: =5
+            ZIndex: =1
+
+            DataCardKey15 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                ZIndex: =1
+
+            DataCardValue15 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
+                ZIndex: =2
+
+            ErrorMessage7 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            StarVisible7 As label:
+                Align: =Align.Center
+                Height: =DataCardKey15.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey15.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui experiencia em produtos microsoft? _DataCard2' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuiexperie"
+            Default: =ThisItem.'A empresa contratante possui experiencia em produtos microsoft? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Aempresacontratantepossuiexperie")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue16.Value
+            Width: =568
+            X: =0
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey16 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue16 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                ZIndex: =2
+
+            ErrorMessage8 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue16.Y + DataCardValue16.Height
+                ZIndex: =3
+
+            StarVisible8 As label:
+                Align: =Align.Center
+                Height: =DataCardKey16.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey16.Y
+                ZIndex: =4
+
+        "'A empresa contratante possui algum software legado para ser adicionado a migração? _DataCard2' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Aempresacontratantepossuialgumso"
+            Default: =ThisItem.'A empresa contratante possui algum software legado para ser adicionado a migração? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"Aempresacontratantepossuialgumso")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue21.Value
+            Width: =568
+            X: =1
+            Y: =6
+            ZIndex: =1
+
+            DataCardKey21 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue21 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey21.Y + DataCardKey21.Height + 5
+                ZIndex: =2
+
+            ErrorMessage9 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue21.Y + DataCardValue21.Height
+                ZIndex: =3
+
+            StarVisible9 As label:
+                Align: =Align.Center
+                Height: =DataCardKey21.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey21.Y
+                ZIndex: =4
+
+        "'Para um ambiente Híbrido, a empresa contratante já possui solução em Microsoft Active Directory? _DataCard2' As typedDataCard.toggleEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ParaumambienteH_x00ed_brido_x002"
+            Default: =ThisItem.'Para um ambiente Híbrido, a empresa contratante já possui solução em Microsoft Active Directory? '
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"ParaumambienteH_x00ed_brido_x002")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue22.Value
+            Width: =568
+            X: =0
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey22 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue22 As toggleSwitch:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                FalseText: ="Não"
+                Height: =49
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                TrueText: ="Sim"
+                Width: =154
+                X: =30
+                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                ZIndex: =2
+
+            ErrorMessage10 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue22.Y + DataCardValue22.Height
+                ZIndex: =3
+
+            StarVisible10 As label:
+                Align: =Align.Center
+                Height: =DataCardKey22.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey22.Y
+                ZIndex: =4
+
+        Anexos_DataCard1 As typedDataCard.attachmentsEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="{Attachments}"
+            Default: =ThisItem.Anexos
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Checklist - Migração 365'],DataSourceInfo.DisplayName,"{Attachments}")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue29.Attachments
+            Width: =568
+            X: =1
+            Y: =7
+            ZIndex: =1
+
+            DataCardKey29 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue29 As attachments:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DisplayMode: =Parent.DisplayMode
+                Height: =520
+                IsInDataCard: =true
+                Items: =Parent.Default
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey29.Y + DataCardKey29.Height + 5
+                ZIndex: =2
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue29.Y + DataCardValue29.Height
+                ZIndex: =3
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Height: =DataCardKey29.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey29.Y
+                ZIndex: =4
+
