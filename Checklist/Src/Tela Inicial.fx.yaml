@@ -8,19 +8,19 @@
         Height: =640
         Size: =21
         Text: =
-        Width: =139
+        Width: =121
         ZIndex: =1
 
     Image1 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =3
-        Height: =109
+        Height: =89
         Image: =User().Image
         RadiusBottomLeft: =150
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
-        Width: =116
+        Width: =81
         X: =15
         Y: =27
         ZIndex: =2
@@ -35,8 +35,7 @@
         Size: =14
         Text: ="Olá, " & User().FullName & "!"
         Width: =121
-        X: =10
-        Y: =136
+        Y: =116
         ZIndex: =3
 
     Label4 As label:
@@ -49,8 +48,8 @@
         Size: =25
         Text: ="Qual Checklist deseja adicionar?"
         Width: =545
-        X: =387
-        Y: =13
+        X: =348
+        Y: =14
         ZIndex: =4
 
     "'Checklist M365' As button":
