@@ -30,8 +30,8 @@
         Size: =21
         Text: =
         Width: =441
-        X: =207
-        Y: =90
+        X: =165
+        Y: =75
         ZIndex: =4
 
     TextInput1 As text:
@@ -39,16 +39,16 @@
         Height: =50
         Size: =21
         Width: =376
-        X: =250
-        Y: =127
+        X: =197
+        Y: =103
         ZIndex: =5
 
     Label1 As label:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =110
+        Height: =112
         Size: =21
-        Text: ="Agendar Reunião"
-        Width: =121
+        Text: =
+        Width: =133
         Y: =127
         ZIndex: =6
 
