@@ -14,13 +14,12 @@
     Image1 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =3
-        Height: =89
         Image: =User().Image
         RadiusBottomLeft: =150
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
-        Width: =81
+        Width: =94
         X: =15
         Y: =27
         ZIndex: =2
@@ -29,11 +28,11 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Georgia
-        Height: =110
+        Height: =123
         PaddingBottom: =30
         PaddingTop: =10
         Size: =14
-        Text: ="Olá, " & User().FullName & "!"
+        Text: ="Olá, Lucas Araujo Lins!"
         Width: =121
         Y: =116
         ZIndex: =3
@@ -62,8 +61,8 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Migração M365"
-        Width: =298
-        X: =170
+        Width: =309
+        X: =136
         Y: =97
         ZIndex: =5
 
@@ -85,8 +84,13 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Active Directory"
-        Width: =286
-        X: =503
+        Width: =317
+        X: =462
         Y: =97
         ZIndex: =7
+
+    CMenu_1 As CMenu:
+        Width: =121
+        X: =935
+        ZIndex: =8
 
