@@ -25,13 +25,13 @@ cMenu As CanvasComponent:
         Layout: =Layout.Vertical
         TemplateSize: |
             =100
-        Width: =410
+        Width: =104
         ZIndex: =2
 
         Icon5 As icon.Airplane:
             Height: =86
-            Icon: =Icon.Airplane
-            OnSelect: =ThisItem.icone
+            Icon: =ThisItem.icone
+            OnSelect: =Navigate(ThisItem.tela,Fade) 
             PaddingBottom: =20
             PaddingLeft: =20
             PaddingRight: =20

@@ -2,6 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =ClearCollect(colNavegacao,
+        {id: 'Tela Inicial'.Name, tela: 'Tela Inicial', icone: Icon.Home},
         {id: 'Marcar Reunião no Teams'.Name, tela: 'Marcar Reunião no Teams', icone: Icon.AddUser},
         {id: 'Entrar em Contato(Arq Soluções-Privado)'.Name, tela: 'Entrar em Contato(Arq Soluções-Privado)', icone: Icon.AddDocument})
            
