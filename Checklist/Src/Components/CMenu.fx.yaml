@@ -21,7 +21,7 @@ cMenu As CanvasComponent:
 
     Gallery1 As gallery.galleryVertical:
         Default: =LookUp(colNavegacao, id = App.ActiveScreen.Name)
-        Height: =327
+        Height: =340
         Items: =colNavegacao
         Layout: =Layout.Vertical
         TemplateSize: |
@@ -39,15 +39,14 @@ cMenu As CanvasComponent:
             PaddingTop: =20
             Tooltip: =ThisItem.id
             Width: =81
-            X: =5
+            X: =2
             Y: =10
             ZIndex: =1
 
     Rectangle1 As rectangle:
-        Height: =70
-        Visible: =
-        Width: =7
+        Height: =4
+        Width: =59
         X: =16
-        Y: =24
+        Y: =87
         ZIndex: =3
 
