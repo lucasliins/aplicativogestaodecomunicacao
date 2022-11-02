@@ -106,7 +106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -325,7 +325,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -601,7 +601,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -877,7 +877,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1_3",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1079,7 +1079,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Reuniao no Teams": {
+    "Reuniao": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1114,7 +1114,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Reuniao no Teams",
+      "Name": "Reuniao",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1125,12 +1125,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1140,17 +1135,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1161,6 +1151,16 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -1219,7 +1219,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1417,5 +1417,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Reuniao no Teams"
+  "TopParentName": "Reuniao"
 }

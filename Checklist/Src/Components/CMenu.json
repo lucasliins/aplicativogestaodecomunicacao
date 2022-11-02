@@ -1,71 +1,12 @@
 {
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
-  "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": false,
-    "Children": [],
-    "ControlPropertyState": [
-      "Fill",
-      "Height",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "Width",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      "X",
-      "Y",
-      "ZIndex"
-    ],
-    "LastModifiedTimestamp": "638028321788741967",
-    "Name": "CMenu",
-    "Rules": [
-      {
-        "Category": "Design",
-        "InvariantScript": "1",
-        "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "Y",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "X",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "139",
-        "Property": "Width",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "640",
-        "Property": "Height",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "RGBA(0, 0, 0, 0)",
-        "Property": "Fill",
-        "RuleProviderType": "System"
-      }
-    ]
-  },
   "ComponentManifest": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "CMenu",
-    "TemplateGuid": "ce50b1b24d104fb480bfe5dcd755c2e2"
+    "Name": "cMenu",
+    "TemplateGuid": "e7cb7330c0d74e5ea104e68ed46c2734"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -78,8 +19,8 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638028321788741967",
-  "Name": "ce50b1b24d104fb480bfe5dcd755c2e2",
+  "LastModifiedTimestamp": "638030134135899296",
+  "Name": "e7cb7330c0d74e5ea104e68ed46c2734",
   "OverridableProperties": {},
-  "Version": "638024509970117865"
+  "Version": "638030119030388853"
 }

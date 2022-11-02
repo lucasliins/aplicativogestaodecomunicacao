@@ -533,10 +533,10 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@'Checklist - Migração 365'].Aempresacontratantepossuiinteres)
+                Items: =Choices([@'Checklist - Migração 365'].'A empresa contratante possui interesse em mais alguma funcionalidade M365? Se sim, qual? ')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Checklist - Migração 365'.Aempresacontratantepossuiinteres,DataCardValue63.SearchText)
+                SearchItems: =Choices('Checklist - Migração 365'.'A empresa contratante possui interesse em mais alguma funcionalidade M365? Se sim, qual? ',DataCardValue63.SearchText)
                 Size: =21
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60

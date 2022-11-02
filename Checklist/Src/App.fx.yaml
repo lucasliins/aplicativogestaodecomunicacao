@@ -1,3 +1,8 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(colNavegacao,
+        {id: Reuniao.Name, tela: Reuniao, icone: Icon.Home},
+        {id: ContatoTeams.Name, tela: ContatoTeams, icone: Icon.Add})
+           
 

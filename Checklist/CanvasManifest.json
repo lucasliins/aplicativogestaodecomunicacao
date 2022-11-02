@@ -110,7 +110,8 @@
   },
   "ScreenOrder": [
     "Tela Inicial",
-    "Reuniao no Teams",
+    "Reuniao",
+    "ContatoTeams",
     "Navegação M365",
     "Navegação Active Directory",
     "Detalhes M365",

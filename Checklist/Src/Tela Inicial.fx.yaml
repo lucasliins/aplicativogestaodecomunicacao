@@ -8,7 +8,7 @@
         Height: =640
         Size: =21
         Text: =
-        Width: =121
+        Width: =104
         ZIndex: =1
 
     Image1 As image:
@@ -19,22 +19,22 @@
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
-        Width: =94
-        X: =15
-        Y: =27
+        Width: =96
+        X: =4
+        Y: =14
         ZIndex: =2
 
     Label2 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Georgia
-        Height: =123
+        Height: =101
         PaddingBottom: =30
         PaddingTop: =10
         Size: =14
         Text: ="Olá, Lucas Araujo Lins!"
-        Width: =121
-        Y: =116
+        Width: =104
+        Y: =129
         ZIndex: =3
 
     Label4 As label:
@@ -47,13 +47,13 @@
         Size: =25
         Text: ="Qual Checklist deseja adicionar?"
         Width: =545
-        X: =348
+        X: =386
         Y: =14
         ZIndex: =4
 
     "'Checklist M365' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =85
+        Height: =65
         OnSelect: =Navigate('Navegação M365')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -61,8 +61,8 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Migração M365"
-        Width: =309
-        X: =136
+        Width: =259
+        X: =127
         Y: =97
         ZIndex: =5
 
@@ -76,7 +76,7 @@
 
     "'Checklist Active Directory' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =85
+        Height: =65
         OnSelect: =Navigate('Navegação Active Directory')
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -84,13 +84,8 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Active Directory"
-        Width: =317
-        X: =462
+        Width: =281
+        X: =416
         Y: =97
         ZIndex: =7
-
-    CMenu_1 As CMenu:
-        Width: =121
-        X: =935
-        ZIndex: =8
 
