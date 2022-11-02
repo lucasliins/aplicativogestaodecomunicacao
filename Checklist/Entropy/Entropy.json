@@ -364,7 +364,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/02/2022 20:49:30",
+  "HeaderLastSavedDateTimeUTC": "11/02/2022 20:54:22",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "6a1a4e06-8f57-49df-ba6d-a486088e885a": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/6480431774654c168c1f5232444c5534\""
@@ -411,12 +411,12 @@
     "combobox": 9,
     "form": 12,
     "formViewer": 8,
-    "gallery": 5,
-    "htmlViewer": 4,
-    "icon": 6,
+    "gallery": 4,
+    "htmlViewer": 3,
+    "icon": 5,
     "image": 1,
     "label": 0,
-    "rectangle": 3,
+    "rectangle": 6,
     "text": 2,
     "toggleSwitch": 10
   },
@@ -670,7 +670,7 @@
     "IconRefresh1_1": 41,
     "IconSortUpDown1": 25,
     "IconSortUpDown1_1": 40,
-    "Image1": 1,
+    "Image1": 2,
     "Image1_1": 9,
     "Image1_2": 16,
     "Image3": 7,
@@ -684,7 +684,7 @@
     "Label2": 5,
     "Label2_1": 12,
     "Label2_2": 19,
-    "Label4": 2,
+    "Label4": 1,
     "LblAppName1": 23,
     "LblAppName1_1": 39,
     "LblAppName2": 58,
@@ -712,7 +712,7 @@
     "Quantas contas serão implementadas/migradas para a plataforma Active Directory? _DataCard1": 147,
     "Quantas contas serão migradas? _DataCard1": 85,
     "Quantas contas serão migradas? _DataCard2": 223,
-    "Rectangle1": 0,
+    "Rectangle1": 342,
     "Rectangle11": 30,
     "Rectangle11_1": 46,
     "RectQuickActionBar1": 22,
@@ -810,7 +810,7 @@
       "typedDataCard": 62
     },
     "DeserializationLoadTime": 4.8310728,
-    "ErrorCount": 0
+    "ErrorCount": 2
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

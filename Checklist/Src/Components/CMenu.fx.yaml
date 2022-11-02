@@ -1,6 +1,7 @@
 cMenu As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =340
+    Visible: =true
     Width: =104
     X: =0
     Y: =0
@@ -11,7 +12,7 @@ cMenu As CanvasComponent:
         HtmlText: |-
             ="<div style='
             background: #ffffff;
-            height: 280px; 
+            height: 300px; 
             border-radius: 6px;
             margin: 5px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
@@ -45,6 +46,7 @@ cMenu As CanvasComponent:
 
     Rectangle1 As rectangle:
         Height: =4
+        Visible: =ThisItem.IsSelected
         Width: =59
         X: =16
         Y: =87
