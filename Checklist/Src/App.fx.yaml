@@ -3,6 +3,6 @@ App As appinfo:
     OnStart: |-
         =ClearCollect(colNavegacao,
         {id: 'Marcar Reunião no Teams'.Name, tela: 'Marcar Reunião no Teams', icone: Icon.Home},
-        {id: 'Procurar Contato(Arq Soluções-Privado)'.Name, tela: 'Procurar Contato(Arq Soluções-Privado)', icone: Icon.Add})
+        {id: 'Entrar em Contato(Arq Soluções-Privado)'.Name, tela: 'Entrar em Contato(Arq Soluções-Privado)', icone: Icon.Add})
            
 
