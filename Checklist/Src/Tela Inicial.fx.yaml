@@ -89,3 +89,8 @@
         Y: =97
         ZIndex: =7
 
+    cMenu_1 As cMenu:
+        Height: =222
+        Y: =209
+        ZIndex: =8
+

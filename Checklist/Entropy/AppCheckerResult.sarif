@@ -1304,19 +1304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Reuniao.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "'Marcar Reunião no Teams'.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Reuniao.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "'Marcar Reunião no Teams'.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Reuniao",
-                "type": "Reuniao.TextInput1"
+                "module": "Marcar Reunião no Teams",
+                "type": "'Marcar Reunião no Teams'.TextInput1"
               }
             }
           ],
@@ -1574,19 +1574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ContatoTeams.TextInput1_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Procurar Contato(Arq Soluções-Privado)'.TextInput1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ContatoTeams.TextInput1_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Procurar Contato(Arq Soluções-Privado)'.TextInput1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "ContatoTeams",
-                "type": "ContatoTeams.TextInput1_1"
+                "module": "Procurar Contato(Arq Soluções-Privado)",
+                "type": "'Procurar Contato(Arq Soluções-Privado)'.TextInput1_1"
               }
             }
           ],

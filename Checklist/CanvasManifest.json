@@ -110,8 +110,8 @@
   },
   "ScreenOrder": [
     "Tela Inicial",
-    "Reuniao",
-    "ContatoTeams",
+    "Marcar Reunião no Teams",
+    "Procurar Contato(Arq Soluções-Privado)",
     "Navegação M365",
     "Navegação Active Directory",
     "Detalhes M365",
