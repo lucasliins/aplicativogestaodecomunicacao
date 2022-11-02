@@ -31,7 +31,7 @@ cMenu As CanvasComponent:
         Icon5 As icon.Airplane:
             Icon: =Icon.Airplane
             OnSelect: =ThisItem.icone
-            X: =16
-            Y: =24
+            X: =15
+            Y: =20
             ZIndex: =1
 
