@@ -1,6 +1,6 @@
 cMenu As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =410
+    Height: =340
     Width: =104
     X: =0
     Y: =0
@@ -11,16 +11,17 @@ cMenu As CanvasComponent:
         HtmlText: |-
             ="<div style='
             background: #ffffff;
-            height: 380px; 
+            height: 280px; 
             border-radius: 6px;
             margin: 5px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
             ></div>"
-        Width: =104
+        Width: =92
         ZIndex: =1
 
     Gallery1 As gallery.galleryVertical:
-        Height: =410
+        Default: =LookUp(colNavegacao, id = App.ActiveScreen.Name)
+        Height: =327
         Items: =colNavegacao
         Layout: =Layout.Vertical
         TemplateSize: |
@@ -41,4 +42,12 @@ cMenu As CanvasComponent:
             X: =5
             Y: =10
             ZIndex: =1
+
+    Rectangle1 As rectangle:
+        Height: =70
+        Visible: =
+        Width: =7
+        X: =16
+        Y: =24
+        ZIndex: =3
 

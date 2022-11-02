@@ -34,7 +34,7 @@
         Size: =14
         Text: ="Olá, Lucas Araujo Lins!"
         Width: =104
-        Y: =129
+        Y: =120
         ZIndex: =3
 
     Label4 As label:
@@ -42,13 +42,12 @@
         Color: =RGBA(56, 96, 178, 1)
         DisabledColor: =RGBA(56, 96, 178, 1)
         Font: =Font.Georgia
-        Height: =71
+        Height: =83
         PaddingTop: =0
         Size: =25
         Text: ="Qual Checklist deseja adicionar?"
-        Width: =545
-        X: =386
-        Y: =14
+        Width: =773
+        X: =237
         ZIndex: =4
 
     "'Checklist M365' As button":
@@ -91,6 +90,7 @@
 
     cMenu_1 As cMenu:
         Height: =412
-        Y: =209
+        X: =4
+        Y: =194
         ZIndex: =8
 

@@ -7,7 +7,7 @@
         Height: =640
         Size: =21
         Text: =
-        Width: =121
+        Width: =104
         ZIndex: =1
 
     Image1_1 As image:
@@ -19,8 +19,8 @@
         RadiusTopLeft: =150
         RadiusTopRight: =150
         Width: =94
-        X: =13
-        Y: =39
+        X: =4
+        Y: =14
         ZIndex: =2
 
     Label1_3 As label:
@@ -51,4 +51,23 @@
         Width: =133
         Y: =127
         ZIndex: =6
+
+    cMenu_2 As cMenu:
+        Height: =308
+        X: =4
+        Y: =194
+        ZIndex: =7
+
+    Label2_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.Georgia
+        Height: =101
+        PaddingBottom: =30
+        PaddingTop: =10
+        Size: =14
+        Text: ="Olá, Lucas Araujo Lins!"
+        Width: =104
+        Y: =120
+        ZIndex: =8
 
