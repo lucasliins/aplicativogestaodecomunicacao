@@ -50,6 +50,7 @@
         DataSource: =[@'Checklist - Active Directory']
         Height: =Parent.Height - EditForm1_1.Y
         Item: =BrowseGallery1_1.Selected
+        NumberOfColumns: =2
         OnSuccess: =Back()
         Width: =Parent.Width
         Y: =RectQuickActionBar3_1.Height
@@ -66,7 +67,7 @@
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Title")
             Required: =true
             Update: =DataCardValue53.Text
-            Width: =640
+            Width: =568
             X: =0
             Y: =0
             ZIndex: =1
@@ -139,9 +140,9 @@
             Height: =50
             Required: =false
             Update: =Value(DataCardValue32.Text)
-            Width: =640
-            X: =0
-            Y: =1
+            Width: =568
+            X: =1
+            Y: =0
             ZIndex: =1
 
             DataCardKey32 As label:
@@ -213,9 +214,9 @@
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Descri_x00e7__x00e3_odoProjeto_x")
             Required: =false
             Update: =DataCardValue40.Text
-            Width: =640
+            Width: =568
             X: =0
-            Y: =2
+            Y: =1
             ZIndex: =1
 
             DataCardKey40 As label:
@@ -287,9 +288,9 @@
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "EmpresaContratante_x003a_")
             Required: =false
             Update: =DataCardValue41.Text
-            Width: =640
-            X: =0
-            Y: =3
+            Width: =568
+            X: =1
+            Y: =1
             ZIndex: =1
 
             DataCardKey41 As label:
@@ -359,9 +360,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue54.Selected
-            Width: =640
+            Width: =568
             X: =0
-            Y: =4
+            Y: =2
             ZIndex: =1
 
             DataCardKey54 As label:
@@ -432,9 +433,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue55.Selected
-            Width: =640
-            X: =0
-            Y: =5
+            Width: =568
+            X: =1
+            Y: =2
             ZIndex: =1
 
             DataCardKey55 As label:
@@ -508,9 +509,9 @@
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Quallicen_x00e7_a_x0028_s_x0029_")
             Required: =false
             Update: =DataCardValue42.Text
-            Width: =640
+            Width: =568
             X: =0
-            Y: =6
+            Y: =3
             ZIndex: =1
 
             DataCardKey42 As label:
@@ -581,9 +582,9 @@
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Aempresacontratantepossuiinteres0")
             Required: =false
             Update: =DataCardValue33.Text
-            Width: =640
-            X: =0
-            Y: =7
+            Width: =568
+            X: =1
+            Y: =3
             ZIndex: =1
 
             DataCardKey33 As label:
@@ -652,9 +653,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue34.Value
-            Width: =640
+            Width: =568
             X: =0
-            Y: =8
+            Y: =4
             ZIndex: =1
 
             DataCardKey34 As label:
@@ -718,9 +719,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue35.Value
-            Width: =640
-            X: =0
-            Y: =9
+            Width: =568
+            X: =1
+            Y: =4
             ZIndex: =1
 
             DataCardKey35 As label:
@@ -784,9 +785,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue36.Value
-            Width: =640
+            Width: =568
             X: =0
-            Y: =10
+            Y: =5
             ZIndex: =1
 
             DataCardKey36 As label:
@@ -850,9 +851,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue37.Value
-            Width: =640
-            X: =0
-            Y: =11
+            Width: =568
+            X: =1
+            Y: =5
             ZIndex: =1
 
             DataCardKey37 As label:
@@ -916,9 +917,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue38.Value
-            Width: =640
+            Width: =568
             X: =0
-            Y: =12
+            Y: =6
             ZIndex: =1
 
             DataCardKey38 As label:
@@ -982,9 +983,9 @@
             Height: =50
             Required: =false
             Update: =DataCardValue30.Attachments
-            Width: =640
-            X: =0
-            Y: =13
+            Width: =568
+            X: =1
+            Y: =6
             ZIndex: =1
 
             DataCardKey30 As label:
