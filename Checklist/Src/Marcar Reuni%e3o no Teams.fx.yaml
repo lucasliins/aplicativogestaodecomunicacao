@@ -26,21 +26,21 @@
     Label1_3 As label:
         Color: =RGBA(56, 96, 178, 1)
         Fill: =RGBA(0, 94, 146, 1)
-        Height: =386
+        Height: =574
         Size: =21
         Text: =
-        Width: =441
-        X: =165
-        Y: =75
+        Width: =521
+        X: =162
+        Y: =33
         ZIndex: =4
 
     TextInput1 As text:
-        Default: ="Entrada de texto"
-        Height: =50
+        Default: =""
+        Height: =54
         Size: =21
-        Width: =376
+        Width: =449
         X: =197
-        Y: =103
+        Y: =60
         ZIndex: =5
 
     Label1 As label:
@@ -53,9 +53,9 @@
         ZIndex: =6
 
     cMenu_2 As cMenu:
-        Height: =308
+        Height: =419
         X: =4
-        Y: =194
+        Y: =221
         ZIndex: =7
 
     Label2_1 As label:
@@ -65,9 +65,115 @@
         Height: =101
         PaddingBottom: =30
         PaddingTop: =10
-        Size: =14
-        Text: ="Olá, Lucas Araujo Lins!"
+        Size: =15
+        Text: ="Nova Reunião"
         Width: =104
         Y: =120
         ZIndex: =8
+
+    DatePicker1 As datepicker:
+        Height: =50
+        OnChange: |-
+            =Set( 
+                IniHora, 
+                Year(DatePicker1.SelectedDate) & "-" & 
+                Month (DatePicker1.SelectedDate) & "-" & 
+                Day (DatePicker1.SelectedDate) & "T" & Dropdown1.SelectedText.Value & ":00"
+            )
+        Size: =24
+        Width: =255
+        X: =197
+        Y: =142
+        ZIndex: =9
+
+    DatePicker1_1 As datepicker:
+        Height: =50
+        OnChange: |-
+            =Set( 
+                FimHora, 
+                Year(DatePicker1_1.SelectedDate) & "-" & 
+                Month (DatePicker1_1.SelectedDate) & "-" & 
+                Day (DatePicker1_1.SelectedDate) & "T" & Dropdown1_1.SelectedText.Value & ":00"
+            )
+        Size: =24
+        Width: =255
+        X: =197
+        Y: =221
+        ZIndex: =10
+
+    "'Checklist Active Directory_1' As button":
+        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
+        Height: =51
+        OnSelect: |-
+            =Set(
+                varurl, 
+                   CriarReuniãonoTeamsapartirdopowerApps.Run(
+                       TextInput1.Text,
+                       TextInput1_2.Text, 
+                       IniHora,
+                       FimHora
+            ) 
+            )
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =24
+        Text: =""
+        Width: =203
+        X: =339
+        Y: =525
+        ZIndex: =11
+
+    Dropdown1 As dropdown:
+        Height: =50
+        Items: |-
+            =["08:00","09:00","10:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00"] 
+        OnChange: |-
+            =Set( 
+                IniHora, 
+                Year(DatePicker1.SelectedDate) & "-" & 
+                Month (DatePicker1.SelectedDate) & "-" & 
+                Day (DatePicker1.SelectedDate) & "T" & Dropdown1.SelectedText.Value & ":00"
+            )
+        Size: =21
+        Width: =175
+        X: =471
+        Y: =141
+        ZIndex: =12
+
+    Dropdown1_1 As dropdown:
+        Height: =50
+        Items: |-
+            =["08:00","09:00","10:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00"] 
+        OnChange: |-
+            =Set( 
+                FimHora, 
+                Year(DatePicker1_1.SelectedDate) & "-" & 
+                Month (DatePicker1_1.SelectedDate) & "-" & 
+                Day (DatePicker1_1.SelectedDate) & "T" & Dropdown1_1.SelectedText.Value & ":00"
+            )
+        Size: =21
+        Width: =175
+        X: =471
+        Y: =221
+        ZIndex: =13
+
+    TextInput1_2 As text:
+        Default: =""
+        Height: =212
+        Size: =21
+        Width: =449
+        X: =197
+        Y: =294
+        ZIndex: =14
+
+    Label5 As label:
+        Height: =81
+        Size: =21
+        Text: =varurl.meetingurl
+        Width: =430
+        X: =695
+        Y: =33
+        ZIndex: =15
 
