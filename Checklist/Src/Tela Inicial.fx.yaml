@@ -66,11 +66,11 @@
         ZIndex: =5
 
     Image3 As image:
-        Height: =158
+        Height: =170
         Image: =LANLINK10
-        Width: =415
-        X: =720
-        Y: =480
+        Width: =164
+        X: =969
+        Y: =470
         ZIndex: =6
 
     "'Checklist Active Directory' As button":
