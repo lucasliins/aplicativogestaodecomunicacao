@@ -505,7 +505,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Checklist - Active Directory'],DataSourceInfo.DisplayName,"Quallicen_x00e7_a_x0028_s_x0029_")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =183
             MaxLength: =DataSourceInfo([@'Checklist - Active Directory'], DataSourceInfo.MaxLength, "Quallicen_x00e7_a_x0028_s_x0029_")
             Required: =false
             Update: =DataCardValue42.Text
@@ -541,7 +541,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey42.Y + DataCardKey42.Height + 5
+                Y: =127
                 ZIndex: =2
 
             ErrorMessage30 As label:
