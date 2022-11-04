@@ -1,6 +1,21 @@
 "'Tela Inicial' As screen":
-    BackgroundImage: =Imagem2989
+    BackgroundImage: ='619be57b8f2a8c42d795103d_Mask Group (1)'
     ImagePosition: =ImagePosition.Fill
+
+    HtmlText2 As htmlViewer:
+        Height: =79
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 50px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =384
+        X: =436
+        Y: =4
+        ZIndex: =1
 
     Label1_1 As label:
         Color: =RGBA(56, 96, 178, 1)
@@ -9,7 +24,7 @@
         Size: =21
         Text: =
         Width: =104
-        ZIndex: =1
+        ZIndex: =2
 
     Image1 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -22,7 +37,7 @@
         Width: =96
         X: =4
         Y: =14
-        ZIndex: =2
+        ZIndex: =3
 
     Label2 As label:
         Align: =Align.Center
@@ -35,20 +50,21 @@
         Text: ="Olá, Lucas Araujo Lins!"
         Width: =104
         Y: =120
-        ZIndex: =3
+        ZIndex: =4
 
     Label4 As label:
         Align: =Align.Center
         Color: =RGBA(56, 96, 178, 1)
         DisabledColor: =RGBA(56, 96, 178, 1)
-        Font: =Font.Georgia
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
         Height: =83
         PaddingTop: =0
-        Size: =25
+        Size: =20
         Text: ="Qual Checklist deseja adicionar?"
-        Width: =773
-        X: =237
-        ZIndex: =4
+        Width: =763
+        X: =247
+        ZIndex: =5
 
     "'Checklist M365' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
@@ -63,7 +79,7 @@
         Width: =259
         X: =127
         Y: =97
-        ZIndex: =5
+        ZIndex: =6
 
     Image3 As image:
         Height: =170
@@ -71,7 +87,7 @@
         Width: =164
         X: =969
         Y: =470
-        ZIndex: =6
+        ZIndex: =7
 
     "'Checklist Active Directory' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
@@ -84,13 +100,13 @@
         Size: =24
         Text: ="Active Directory"
         Width: =281
-        X: =460
+        X: =471
         Y: =97
-        ZIndex: =7
+        ZIndex: =8
 
     cMenu_1 As cMenu:
         Height: =412
         X: =4
         Y: =221
-        ZIndex: =8
+        ZIndex: =9
 
