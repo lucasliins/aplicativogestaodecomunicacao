@@ -68,7 +68,7 @@
 
     "'Checklist M365' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =65
+        Height: =45
         OnSelect: =Navigate('Navegação M365', Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -76,9 +76,9 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Migração M365"
-        Width: =259
-        X: =127
-        Y: =97
+        Width: =200
+        X: =126
+        Y: =162
         ZIndex: =6
 
     Image3 As image:
@@ -91,7 +91,7 @@
 
     "'Checklist Active Directory' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =65
+        Height: =55
         OnSelect: =Navigate('Navegação Active Directory' , Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -99,9 +99,9 @@
         RadiusTopRight: =20
         Size: =24
         Text: ="Active Directory"
-        Width: =281
-        X: =471
-        Y: =97
+        Width: =188
+        X: =132
+        Y: =235
         ZIndex: =8
 
     cMenu_1 As cMenu:
@@ -109,4 +109,64 @@
         X: =4
         Y: =221
         ZIndex: =9
+
+    HtmlText2_1 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =250
+        X: =100
+        Y: =83
+        ZIndex: =10
+
+    HtmlText2_2 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =230
+        X: =376
+        Y: =83
+        ZIndex: =11
+
+    HtmlText2_3 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =216
+        X: =630
+        Y: =83
+        ZIndex: =12
+
+    HtmlText2_4 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =216
+        X: =883
+        Y: =83
+        ZIndex: =13
 
