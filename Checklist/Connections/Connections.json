@@ -9,7 +9,9 @@
       "id": "/providers/microsoft.powerapps/apis/shared_teams"
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "MicrosoftTeams"
+    ],
     "dependencies": {},
     "dependents": [
       "ad2f199d-7d00-4671-adf4-131a75536dce"

@@ -162,11 +162,11 @@
             background: #ffffff;
             height: 40px; 
             border-radius: 6px;
-            margin: 5px; 
+            margin: 4px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
             ></div>"
         Width: =216
-        X: =883
+        X: =895
         Y: =83
         ZIndex: =13
 

@@ -29,7 +29,7 @@
         Height: =564
         Size: =21
         Text: =
-        Width: =509
+        Width: =987
         X: =142
         Y: =33
         ZIndex: =4
@@ -37,6 +37,7 @@
     TextInput1 As text:
         Default: =""
         Height: =54
+        HintText: ="Assunto"
         Size: =21
         Width: =449
         X: =172
@@ -98,12 +99,12 @@
         Size: =24
         Width: =255
         X: =172
-        Y: =218
+        Y: =221
         ZIndex: =10
 
     "'Checklist Active Directory_1' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =51
+        Height: =33
         OnSelect: |-
             =Set(
                 varurl, 
@@ -120,9 +121,9 @@
         RadiusTopRight: =20
         Size: =24
         Text: =""
-        Width: =203
-        X: =298
-        Y: =529
+        Width: =181
+        X: =301
+        Y: =549
         ZIndex: =11
 
     Dropdown1 As dropdown:
@@ -156,16 +157,17 @@
         Size: =21
         Width: =175
         X: =452
-        Y: =218
+        Y: =221
         ZIndex: =13
 
     TextInput1_2 As text:
         Default: =""
-        Height: =212
+        Height: =240
+        HintText: ="Descrição"
         Size: =21
         Width: =449
-        X: =175
-        Y: =290
+        X: =172
+        Y: =296
         ZIndex: =14
 
     Label5 As label:
