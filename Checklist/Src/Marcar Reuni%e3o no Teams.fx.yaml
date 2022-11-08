@@ -62,17 +62,3 @@
         Y: =120
         ZIndex: =8
 
-    Button1 As button:
-        Height: =42
-        OnSelect: =
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        Size: =24
-        Text: ="Botão"
-        Width: =176
-        X: =301
-        Y: =561
-        ZIndex: =16
-

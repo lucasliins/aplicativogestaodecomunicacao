@@ -930,7 +930,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "HtmlText2_2": {
+    "HtmlText2_11": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
@@ -958,7 +958,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Exiba seu texto <b><font color=blue>HTML</font></b> aqui.\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "HtmlText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -973,8 +973,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "HtmlText2_2",
-      "ParentIndex": 5,
+      "Name": "HtmlText2_11",
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1061,7 +1061,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "HtmlText2_3": {
+    "HtmlText2_12": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
@@ -1074,7 +1074,14 @@
         "PressedBorderColor",
         "HoverBorderColor",
         "BorderStyle",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "X",
         "Y",
@@ -1097,7 +1104,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "HtmlText2_3",
+      "Name": "HtmlText2_12",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1185,7 +1192,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "HtmlText2_4": {
+    "HtmlText2_2": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DisplayMode",
@@ -1198,7 +1205,14 @@
         "PressedBorderColor",
         "HoverBorderColor",
         "BorderStyle",
-        "Width",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Width",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Height",
         "X",
         "Y",
@@ -1206,7 +1220,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Exiba seu texto <b><font color=blue>HTML</font></b> aqui.\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "HtmlText",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -1221,8 +1235,8 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "HtmlText2_4",
-      "ParentIndex": 7,
+      "Name": "HtmlText2_2",
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

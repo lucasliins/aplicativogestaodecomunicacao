@@ -51,3 +51,93 @@
         Y: =120
         ZIndex: =8
 
+    HtmlText2_5 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =133
+        Y: =28
+        ZIndex: =9
+
+    HtmlText2_6 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =778
+        Y: =28
+        ZIndex: =10
+
+    HtmlText2_7 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =133
+        Y: =266
+        ZIndex: =11
+
+    HtmlText2_8 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =778
+        Y: =266
+        ZIndex: =12
+
+    HtmlText2_9 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =133
+        Y: =454
+        ZIndex: =13
+
+    HtmlText2_10 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 4px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =311
+        X: =778
+        Y: =454
+        ZIndex: =14
+

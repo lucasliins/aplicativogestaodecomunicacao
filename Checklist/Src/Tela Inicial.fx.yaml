@@ -2,6 +2,51 @@
     BackgroundImage: ='619be57b8f2a8c42d795103d_Mask Group (1)'
     ImagePosition: =ImagePosition.Fill
 
+    HtmlText2_12 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =227
+        X: =900
+        Y: =81
+        ZIndex: =1
+
+    HtmlText2_11 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =194
+        X: =647
+        Y: =82
+        ZIndex: =2
+
+    HtmlText2_2 As htmlViewer:
+        Height: =71
+        HtmlText: |-
+            ="<div style='
+            background: #ffffff;
+            height: 40px; 
+            border-radius: 6px;
+            margin: 5px; 
+            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
+            ></div>"
+        Width: =194
+        X: =399
+        Y: =86
+        ZIndex: =3
+
     HtmlText2 As htmlViewer:
         Height: =79
         HtmlText: |-
@@ -15,7 +60,7 @@
         Width: =384
         X: =436
         Y: =4
-        ZIndex: =1
+        ZIndex: =4
 
     Label1_1 As label:
         Color: =RGBA(56, 96, 178, 1)
@@ -24,7 +69,7 @@
         Size: =21
         Text: =
         Width: =104
-        ZIndex: =2
+        ZIndex: =5
 
     Image1 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -37,7 +82,7 @@
         Width: =96
         X: =4
         Y: =14
-        ZIndex: =3
+        ZIndex: =6
 
     Label2 As label:
         Align: =Align.Center
@@ -50,7 +95,7 @@
         Text: ="Olá, Lucas Araujo Lins!"
         Width: =104
         Y: =120
-        ZIndex: =4
+        ZIndex: =7
 
     Label4 As label:
         Align: =Align.Center
@@ -64,11 +109,11 @@
         Text: ="Qual Checklist deseja adicionar?"
         Width: =763
         X: =247
-        ZIndex: =5
+        ZIndex: =8
 
     "'Checklist M365' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =59
+        Height: =37
         OnSelect: =Navigate('Navegação M365', Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -77,9 +122,9 @@
         Size: =18
         Text: ="Migração M365"
         Width: =194
-        X: =126
-        Y: =162
-        ZIndex: =6
+        X: =141
+        Y: =160
+        ZIndex: =9
 
     Image3 As image:
         Height: =170
@@ -87,11 +132,11 @@
         Width: =164
         X: =969
         Y: =470
-        ZIndex: =7
+        ZIndex: =10
 
     "'Checklist Active Directory' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =59
+        Height: =37
         OnSelect: =Navigate('Navegação Active Directory' , Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
@@ -100,15 +145,15 @@
         Size: =16
         Text: ="Active Directory"
         Width: =194
-        X: =126
-        Y: =249
-        ZIndex: =8
+        X: =141
+        Y: =237
+        ZIndex: =11
 
     cMenu_1 As cMenu:
         Height: =412
         X: =4
         Y: =221
-        ZIndex: =9
+        ZIndex: =12
 
     HtmlText2_1 As htmlViewer:
         Height: =71
@@ -120,54 +165,9 @@
             margin: 5px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
             ></div>"
-        Width: =216
-        X: =117
+        Width: =194
+        X: =141
         Y: =82
-        ZIndex: =10
-
-    HtmlText2_2 As htmlViewer:
-        Height: =71
-        HtmlText: |-
-            ="<div style='
-            background: #ffffff;
-            height: 40px; 
-            border-radius: 6px;
-            margin: 5px; 
-            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
-            ></div>"
-        Width: =216
-        X: =376
-        Y: =83
-        ZIndex: =11
-
-    HtmlText2_3 As htmlViewer:
-        Height: =71
-        HtmlText: |-
-            ="<div style='
-            background: #ffffff;
-            height: 40px; 
-            border-radius: 6px;
-            margin: 5px; 
-            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
-            ></div>"
-        Width: =216
-        X: =630
-        Y: =83
-        ZIndex: =12
-
-    HtmlText2_4 As htmlViewer:
-        Height: =71
-        HtmlText: |-
-            ="<div style='
-            background: #ffffff;
-            height: 40px; 
-            border-radius: 6px;
-            margin: 4px; 
-            box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
-            ></div>"
-        Width: =216
-        X: =895
-        Y: =83
         ZIndex: =13
 
     Label4_1 As label:
@@ -180,7 +180,7 @@
         Size: =22
         Text: ="Produtividade"
         Width: =174
-        X: =136
+        X: =151
         Y: =97
         ZIndex: =14
 
@@ -194,8 +194,8 @@
         Size: =20
         Text: ="Central de Serviços"
         Width: =216
-        X: =895
-        Y: =98
+        X: =906
+        Y: =97
         ZIndex: =15
 
     Label4_3 As label:
@@ -208,7 +208,7 @@
         Size: =22
         Text: ="Segurança"
         Width: =159
-        X: =404
+        X: =417
         Y: =97
         ZIndex: =16
 
@@ -222,7 +222,7 @@
         Size: =22
         Text: ="Cloud"
         Width: =159
-        X: =658
-        Y: =98
+        X: =669
+        Y: =97
         ZIndex: =17
 
