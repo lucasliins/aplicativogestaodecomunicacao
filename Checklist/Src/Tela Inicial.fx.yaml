@@ -88,12 +88,12 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Font: =Font.Georgia
-        Height: =101
+        Height: =129
         PaddingBottom: =30
         PaddingTop: =10
         Size: =14
         Text: ="Olá, Lucas Araujo Lins!"
-        Width: =104
+        Width: =108
         Y: =120
         ZIndex: =7
 

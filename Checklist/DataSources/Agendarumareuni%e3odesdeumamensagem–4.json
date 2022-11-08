@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "55fb07bb-9b9f-4cdc-8655-3550bb8f37da",
+    "Name": "Agendarumareuniãodesdeumamensagem–4",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]

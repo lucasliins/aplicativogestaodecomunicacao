@@ -1,5 +1,5 @@
 {
-  "3b906f2b-b318-4221-b0ba-aaae202d91cd": {
+  "176f65d5-f034-444f-b1d5-a9da6487c03a": {
     "connectionParameters": {
       "sku": "Enterprise"
     },
@@ -9,12 +9,12 @@
       "id": "/providers/microsoft.powerapps/apis/shared_teams"
     },
     "datasets": {},
-    "dataSources": [
-      "MicrosoftTeams"
-    ],
+    "dataSources": [],
     "dependencies": {},
-    "dependents": [],
-    "id": "3b906f2b-b318-4221-b0ba-aaae202d91cd"
+    "dependents": [
+      "b54ad5aa-3c5b-4005-9370-77babe6575c9"
+    ],
+    "id": "176f65d5-f034-444f-b1d5-a9da6487c03a"
   },
   "6a1a4e06-8f57-49df-ba6d-a486088e885a": {
     "connectionParameters": {
@@ -36,16 +36,84 @@
           },
           "Checklist - Migração 365": {
             "tableName": "ca087c07-29dc-4d89-8e34-66438af3b1f4"
+          },
+          "Profissionais Disponíveis": {
+            "tableName": "afa8d86c-5e3c-4cfe-b63a-19fe7782ed2d"
           }
         }
       }
     },
     "dataSources": [
       "Checklist - Migração 365",
-      "Checklist - Active Directory"
+      "Checklist - Active Directory",
+      "Profissionais Disponíveis"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "6a1a4e06-8f57-49df-ba6d-a486088e885a"
+  },
+  "89ba95b0-9173-4c27-8112-06e157d32dec": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "Usuários do Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1593/1.0.1593.2980/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "b54ad5aa-3c5b-4005-9370-77babe6575c9"
+    ],
+    "id": "89ba95b0-9173-4c27-8112-06e157d32dec"
+  },
+  "b54ad5aa-3c5b-4005-9370-77babe6575c9": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-73.westus.logic.azure.com:443/workflows/fb09e29e12ed4859b16c4ea02d128e98/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vQohD1Yd2WaGIv4tL9HFg688XyKchs-7lm7zykjVGyE",
+      "workflowEndpoint": "/subscriptions/9c6ca5c2-db3d-463a-9041-8fae10884f22/resourceGroups/6c115cc4d107463581cd0617e0344073-98c92bfc93f14396bd20a23c980bdf02/providers/Microsoft.Logic/workflows/55fb07bb-9b9f-4cdc-8655-3550bb8f37da",
+      "workflowName": "55fb07bb-9b9f-4cdc-8655-3550bb8f37da",
+      "workflowPath": "/subscriptions/9c6ca5c2-db3d-463a-9041-8fae10884f22/resourceGroups/6c115cc4d107463581cd0617e0344073-98c92bfc93f14396bd20a23c980bdf02/providers/Microsoft.Logic/workflows/55fb07bb-9b9f-4cdc-8655-3550bb8f37da"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "176f65d5-f034-444f-b1d5-a9da6487c03a": {
+          "value": "shared_teams"
+        },
+        "89ba95b0-9173-4c27-8112-06e157d32dec": {
+          "value": "shared_office365users"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "55fb07bb-9b9f-4cdc-8655-3550bb8f37da"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365users": {
+          "value": "89ba95b0-9173-4c27-8112-06e157d32dec"
+        },
+        "shared_teams": {
+          "value": "176f65d5-f034-444f-b1d5-a9da6487c03a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "55fb07bb-9b9f-4cdc-8655-3550bb8f37da"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Agendarumareuniãodesdeumamensagem–4"
+    ],
+    "dependencies": {
+      "shared_office365users": "89ba95b0-9173-4c27-8112-06e157d32dec",
+      "shared_teams": "176f65d5-f034-444f-b1d5-a9da6487c03a"
+    },
+    "dependents": [],
+    "id": "b54ad5aa-3c5b-4005-9370-77babe6575c9"
   }
 }

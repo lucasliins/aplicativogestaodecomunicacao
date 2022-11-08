@@ -52,7 +52,7 @@
         "Name": "HtmlText1",
         "Parent": "cMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 350,
+        "PublishOrderIndex": 372,
         "Rules": [
           {
             "Category": "Data",
@@ -189,7 +189,7 @@
             "Name": "galleryTemplate2",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 352,
+            "PublishOrderIndex": 374,
             "Rules": [
               {
                 "Category": "Design",
@@ -324,7 +324,7 @@
             "Name": "Icon5",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 353,
+            "PublishOrderIndex": 375,
             "Rules": [
               {
                 "Category": "Data",
@@ -593,7 +593,7 @@
         "Name": "Gallery1",
         "Parent": "cMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 351,
+        "PublishOrderIndex": 373,
         "Rules": [
           {
             "Category": "Data",
@@ -803,7 +803,7 @@
         "Name": "Rectangle1",
         "Parent": "cMenu",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 354,
+        "PublishOrderIndex": 376,
         "Rules": [
           {
             "Category": "Design",
@@ -942,7 +942,7 @@
       "ZIndex",
       "Visible"
     ],
-    "LastModifiedTimestamp": "638035024359913547",
+    "LastModifiedTimestamp": "638035456653168832",
     "Name": "cMenu",
     "Rules": [
       {
@@ -1007,7 +1007,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638035024359913547",
+  "LastModifiedTimestamp": "638035456653168832",
   "Name": "e7cb7330c0d74e5ea104e68ed46c2734",
   "OverridableProperties": {},
   "Version": "638030119030388853"
