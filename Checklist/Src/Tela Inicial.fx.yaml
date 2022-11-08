@@ -68,15 +68,15 @@
 
     "'Checklist M365' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =45
+        Height: =59
         OnSelect: =Navigate('Navegação M365', Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
+        Size: =18
         Text: ="Migração M365"
-        Width: =200
+        Width: =194
         X: =126
         Y: =162
         ZIndex: =6
@@ -91,17 +91,17 @@
 
     "'Checklist Active Directory' As button":
         FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =55
+        Height: =59
         OnSelect: =Navigate('Navegação Active Directory' , Fade)
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =24
+        Size: =16
         Text: ="Active Directory"
-        Width: =188
-        X: =132
-        Y: =235
+        Width: =194
+        X: =126
+        Y: =249
         ZIndex: =8
 
     cMenu_1 As cMenu:
@@ -120,9 +120,9 @@
             margin: 5px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
             ></div>"
-        Width: =250
-        X: =100
-        Y: =83
+        Width: =216
+        X: =117
+        Y: =82
         ZIndex: =10
 
     HtmlText2_2 As htmlViewer:
@@ -135,7 +135,7 @@
             margin: 5px; 
             box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'
             ></div>"
-        Width: =230
+        Width: =216
         X: =376
         Y: =83
         ZIndex: =11
@@ -169,4 +169,60 @@
         X: =895
         Y: =83
         ZIndex: =13
+
+    Label4_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledColor: =RGBA(56, 96, 178, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        PaddingTop: =0
+        Size: =22
+        Text: ="Produtividade"
+        Width: =174
+        X: =136
+        Y: =97
+        ZIndex: =14
+
+    Label4_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledColor: =RGBA(56, 96, 178, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        PaddingTop: =0
+        Size: =20
+        Text: ="Central de Serviços"
+        Width: =216
+        X: =895
+        Y: =98
+        ZIndex: =15
+
+    Label4_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledColor: =RGBA(56, 96, 178, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        PaddingTop: =0
+        Size: =22
+        Text: ="Segurança"
+        Width: =159
+        X: =404
+        Y: =97
+        ZIndex: =16
+
+    Label4_4 As label:
+        Align: =Align.Center
+        Color: =RGBA(56, 96, 178, 1)
+        DisabledColor: =RGBA(56, 96, 178, 1)
+        Font: =Font.'Open Sans Condensed'
+        FontWeight: =FontWeight.Semibold
+        PaddingTop: =0
+        Size: =22
+        Text: ="Cloud"
+        Width: =159
+        X: =658
+        Y: =98
+        ZIndex: =17
 

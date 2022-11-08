@@ -26,23 +26,13 @@
     Label1_3 As label:
         Color: =RGBA(56, 96, 178, 1)
         Fill: =RGBA(0, 94, 146, 1)
-        Height: =564
+        Height: =585
         Size: =21
         Text: =
-        Width: =987
-        X: =142
+        Width: =499
+        X: =133
         Y: =33
         ZIndex: =4
-
-    TextInput1 As text:
-        Default: =""
-        Height: =54
-        HintText: ="Assunto"
-        Size: =21
-        Width: =449
-        X: =172
-        Y: =66
-        ZIndex: =5
 
     Label1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -72,111 +62,129 @@
         Y: =120
         ZIndex: =8
 
+    TextInput3 As text:
+        Default: ="Assunto"
+        Height: =45
+        Size: =21
+        Width: =433
+        X: =173
+        Y: =90
+        ZIndex: =9
+
     DatePicker1 As datepicker:
-        Height: =50
+        Height: =58
         OnChange: |-
             =Set( 
                 IniHora, 
-                Year(DatePicker1.SelectedDate) & "-" & 
-                Month (DatePicker1.SelectedDate) & "-" & 
+                Year(DatePicker1.SelectedDate) & "-" &
+                Month(DatePicker1.SelectedDate) & "-" & 
                 Day (DatePicker1.SelectedDate) & "T" & Dropdown1.SelectedText.Value & ":00"
-            )
+            ) 
         Size: =24
-        Width: =255
-        X: =172
-        Y: =142
-        ZIndex: =9
+        Width: =259
+        X: =173
+        Y: =154
+        ZIndex: =10
 
     DatePicker1_1 As datepicker:
-        Height: =50
+        Height: =58
         OnChange: |-
             =Set( 
                 FimHora, 
-                Year(DatePicker1_1.SelectedDate) & "-" & 
-                Month (DatePicker1_1.SelectedDate) & "-" & 
+                Year(DatePicker1_1.SelectedDate) & "-" &
+                Month(DatePicker1_1.SelectedDate) & "-" & 
                 Day (DatePicker1_1.SelectedDate) & "T" & Dropdown1_1.SelectedText.Value & ":00"
-            )
-        Size: =24
-        Width: =255
-        X: =172
-        Y: =221
-        ZIndex: =10
-
-    "'Checklist Active Directory_1' As button":
-        FocusedBorderColor: =ColorFade(Self.Fill, 75%)
-        Height: =33
-        OnSelect: |-
-            =Set(
-                varurl, 
-                   CriarReuniãonoTeamsapartirdopowerApps.Run(
-                    TextInput1.Text,
-                    TextInput1_2.Text, 
-                    IniHora,
-                    FimHora
             ) 
-            )
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
         Size: =24
-        Text: =""
-        Width: =181
-        X: =301
-        Y: =549
+        Width: =259
+        X: =173
+        Y: =221
         ZIndex: =11
 
     Dropdown1 As dropdown:
-        Height: =50
+        Height: =58
         Items: |-
-            =["08:00","09:00","10:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00"] 
+            =["08:00","08:30","09:00", "09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30",]
         OnChange: |-
             =Set( 
                 IniHora, 
-                Year(DatePicker1.SelectedDate) & "-" & 
-                Month (DatePicker1.SelectedDate) & "-" & 
+                Year(DatePicker1.SelectedDate) & "-" &
+                Month(DatePicker1.SelectedDate) & "-" & 
                 Day (DatePicker1.SelectedDate) & "T" & Dropdown1.SelectedText.Value & ":00"
-            )
+            ) 
         Size: =21
-        Width: =175
-        X: =452
-        Y: =142
+        Width: =159
+        X: =447
+        Y: =154
         ZIndex: =12
 
     Dropdown1_1 As dropdown:
-        Height: =50
+        Height: =58
         Items: |-
-            =["08:00","09:00","10:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00"] 
+            =["08:00","08:30","09:00", "09:30","10:00","10:30","11:00","11:30","12:00","12:30","13:00","13:30","14:00","14:30","15:00","15:30","16:00","16:30","17:00","17:30",]
         OnChange: |-
             =Set( 
                 FimHora, 
-                Year(DatePicker1_1.SelectedDate) & "-" & 
-                Month (DatePicker1_1.SelectedDate) & "-" & 
+                Year(DatePicker1_1.SelectedDate) & "-" &
+                Month(DatePicker1_1.SelectedDate) & "-" & 
                 Day (DatePicker1_1.SelectedDate) & "T" & Dropdown1_1.SelectedText.Value & ":00"
-            )
+            ) 
         Size: =21
-        Width: =175
-        X: =452
+        Width: =159
+        X: =447
         Y: =221
         ZIndex: =13
 
-    TextInput1_2 As text:
-        Default: =""
-        Height: =240
-        HintText: ="Descrição"
+    TextInput4 As text:
+        Default: ="Descrição"
+        Height: =191
         Size: =21
-        Width: =449
-        X: =172
-        Y: =296
+        Width: =433
+        X: =173
+        Y: =355
         ZIndex: =14
 
-    Label5 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =81
+    TextInput3_1 As text:
+        Default: ="Participantes"
+        Height: =51
         Size: =21
-        Text: =varurl.meetingurl
-        Width: =430
-        X: =679
-        Y: =61
+        Width: =433
+        X: =173
+        Y: =292
         ZIndex: =15
+
+    Button1 As button:
+        Height: =42
+        OnSelect: |-
+            =Set( 
+                varUrl, 
+                'PowerApp->CriarumareuniãonoTeams,RespondtoaPowerApporflow–2'.Run(
+                    TextInput3.Text,
+                    TextInput4.Text, 
+                    TextInput3_1.Text,
+                    IniHora,
+                    FimHora
+                )
+            
+            )   
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =24
+        Text: ="Botão"
+        Width: =176
+        X: =301
+        Y: =561
+        ZIndex: =16
+
+    Label5 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =21
+        Text: =varlUrl.meetingurl
+        Width: =392
+        X: =717
+        Y: =44
+        ZIndex: =17
 

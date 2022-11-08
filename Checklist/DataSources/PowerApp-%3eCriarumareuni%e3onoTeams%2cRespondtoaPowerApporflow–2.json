@@ -1,8 +1,8 @@
 [
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
-    "FlowNameId": "86531cb3-e283-4c3c-9a27-c990fa06cd8f",
-    "Name": "CriarReuniãonoTeamsapartirdopowerApps",
+    "FlowNameId": "ecf7ba1d-abc3-4a2a-9105-ad5b0efc14dc",
+    "Name": "PowerApp->CriarumareuniãonoTeams,RespondtoaPowerApporflow–2",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null

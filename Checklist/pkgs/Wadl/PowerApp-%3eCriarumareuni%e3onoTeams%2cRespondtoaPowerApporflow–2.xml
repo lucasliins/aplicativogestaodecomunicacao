@@ -1,16 +1,22 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://msmanaged-na.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="CriarReuniãonoTeamsapartirdopowerApps" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Criar Reunião no Teams a partir do power Apps" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://msmanaged-na.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PowerApp-&gt;CriarumareuniãonoTeams,RespondtoaPowerApporflow–2" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="PowerApp -&gt; Criar uma reunião no Teams,Respond to a PowerApp or flow – 2" />
   <grammars>
     <jsonTypes targetNamespace="https://msmanaged-na.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Assunto_def" />
+      <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Assunto_1_def" />
       <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Mensagem_def" />
       <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Horadein_uxED_cio_def" />
       <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Horadet_uxE9_rmino_def" />
+      <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Participantesopcionais_def" />
+      <string name="ManualTriggerInput_Criarumareuni_uxE3_onoTeams_Participantesobrigat_uxF3_rios_def" />
       <object name="ManualTriggerInput">
         <property name="CriarumareuniãonoTeams_Assunto" type="string" />
+        <property name="CriarumareuniãonoTeams_Assunto_1" type="string" />
         <property name="CriarumareuniãonoTeams_Mensagem" type="string" />
         <property name="CriarumareuniãonoTeams_Horadeinício" type="string" />
         <property name="CriarumareuniãonoTeams_Horadetérmino" type="string" />
+        <property name="CriarumareuniãonoTeams_Participantesopcionais" type="string" />
+        <property name="CriarumareuniãonoTeams_Participantesobrigatórios" type="string" />
       </object>
       <string name="ResponseActionOutput_meetingurl_def" />
       <object name="ResponseActionOutput">
@@ -30,9 +36,12 @@
           </param>
           <representation mediaType="application/json">
             <param style="plain" name="CriarumareuniãonoTeams_Assunto" path="/CriarumareuniãonoTeams_Assunto" type="xs:string" required="true" />
+            <param style="plain" name="CriarumareuniãonoTeams_Assunto_1" path="/CriarumareuniãonoTeams_Assunto_1" type="xs:string" required="true" />
             <param style="plain" name="CriarumareuniãonoTeams_Mensagem" path="/CriarumareuniãonoTeams_Mensagem" type="xs:string" required="true" />
             <param style="plain" name="CriarumareuniãonoTeams_Horadeinício" path="/CriarumareuniãonoTeams_Horadeinício" type="xs:string" required="true" />
             <param style="plain" name="CriarumareuniãonoTeams_Horadetérmino" path="/CriarumareuniãonoTeams_Horadetérmino" type="xs:string" required="true" />
+            <param style="plain" name="CriarumareuniãonoTeams_Participantesopcionais" path="/CriarumareuniãonoTeams_Participantesopcionais" type="xs:string" required="true" />
+            <param style="plain" name="CriarumareuniãonoTeams_Participantesobrigatórios" path="/CriarumareuniãonoTeams_Participantesobrigatórios" type="xs:string" required="true" />
           </representation>
         </request>
         <response>
