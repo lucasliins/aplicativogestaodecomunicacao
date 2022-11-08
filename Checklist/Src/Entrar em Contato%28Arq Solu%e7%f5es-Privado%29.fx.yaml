@@ -260,7 +260,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Profissionais Disponíveis'],DataSourceInfo.DisplayName,"Teams")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =167
             Required: =false
             Update: =DataCardValue72.Selected
             Width: =416
@@ -284,7 +284,7 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
-                Height: =70
+                Height: =96
                 Items: =Choices([@'Profissionais Disponíveis'].Teams)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
@@ -292,7 +292,7 @@
                 SelectMultiple: =false
                 Size: =21
                 Template: =ListItemTemplate.Person
-                Width: =Parent.Width - 60
+                Width: =356
                 X: =30
                 Y: =DataCardKey73.Y + DataCardKey73.Height + 5
                 ZIndex: =2
