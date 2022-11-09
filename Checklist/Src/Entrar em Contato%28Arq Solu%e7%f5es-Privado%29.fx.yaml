@@ -11,14 +11,14 @@
         ZIndex: =1
 
     "GaleriaFuncionarios As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver4.0'":
-        Height: =543
+        Height: =537
         Items: ='Profissionais Disponíveis'
         Layout: =Layout.Vertical
         TemplateFill: =If(ThisItem.IsSelected,LightSteelBlue,White)
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
-        Width: =552
-        X: =104
+        Width: =567
+        X: =108
         Y: =97
         ZIndex: =1
 
