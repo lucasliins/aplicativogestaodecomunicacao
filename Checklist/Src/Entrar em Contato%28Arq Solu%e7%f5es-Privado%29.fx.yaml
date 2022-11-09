@@ -17,7 +17,7 @@
         TemplateFill: =If(ThisItem.IsSelected,LightSteelBlue,White)
         TemplatePadding: =0
         TemplateSize: =Min(168, Self.Height - 60)
-        Width: =567
+        Width: =553
         X: =108
         Y: =97
         ZIndex: =1
@@ -172,8 +172,8 @@
         Height: =560
         Item: =GaleriaFuncionarios.Selected
         NumberOfColumns: =1
-        Width: =416
-        X: =700
+        Width: =446
+        X: =670
         Y: =74
         ZIndex: =12
 
@@ -186,7 +186,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =true
-            Width: =416
+            Width: =446
             X: =0
             Y: =0
             ZIndex: =13
@@ -224,7 +224,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =416
+            Width: =446
             X: =0
             Y: =1
             ZIndex: =13
@@ -260,9 +260,9 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Profissionais Disponíveis'],DataSourceInfo.DisplayName,"E_x002d_mail")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =137
             Required: =false
-            Width: =416
+            Width: =446
             X: =0
             Y: =2
             ZIndex: =13
@@ -300,7 +300,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
-            Width: =416
+            Width: =446
             X: =0
             Y: =3
             ZIndex: =13

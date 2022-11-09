@@ -42,3 +42,12 @@
         Y: =114
         ZIndex: =8
 
+    Label8 As label:
+        Height: =70
+        Size: =21
+        Text: ="Assunto"
+        Width: =560
+        X: =201
+        Y: =72
+        ZIndex: =9
+
