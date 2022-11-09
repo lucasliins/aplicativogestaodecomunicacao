@@ -253,77 +253,6 @@
                 Y: =DataCardKey72.Y + DataCardKey72.Height + 5
                 ZIndex: =2
 
-        Teams_DataCard2 As typedDataCard.comboBoxViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Teams"
-            Default: =ThisItem.Teams
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Profissionais Disponíveis'],DataSourceInfo.DisplayName,"Teams")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =167
-            Required: =false
-            Update: =DataCardValue72.Selected
-            Width: =416
-            X: =0
-            Y: =2
-            ZIndex: =13
-
-            DataCardKey73 As label:
-                AutoHeight: =true
-                Height: =48
-                Size: =21
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue72 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                Height: =96
-                Items: =Choices([@'Profissionais Disponíveis'].Teams)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices('Profissionais Disponíveis'.Teams,DataCardValue72.SearchText)
-                SelectMultiple: =false
-                Size: =21
-                Template: =ListItemTemplate.Person
-                Width: =356
-                X: =30
-                Y: =DataCardKey73.Y + DataCardKey73.Height + 5
-                ZIndex: =2
-
-            ErrorMessage46 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =24
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue72.Y + DataCardValue72.Height
-                ZIndex: =3
-
-            StarVisible46 As label:
-                Align: =Align.Center
-                Height: =DataCardKey73.Height
-                Size: =21
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey73.Y
-                ZIndex: =4
-
         "'E-mail_DataCard2' As typedDataCard.textualViewCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="E_x002d_mail"
@@ -335,7 +264,7 @@
             Required: =false
             Width: =416
             X: =0
-            Y: =3
+            Y: =2
             ZIndex: =13
 
             DataCardKey74 As label:
@@ -373,7 +302,7 @@
             Required: =false
             Width: =416
             X: =0
-            Y: =4
+            Y: =3
             ZIndex: =13
 
             DataCardKey75 As label:

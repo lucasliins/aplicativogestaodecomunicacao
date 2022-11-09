@@ -44,11 +44,3 @@ cMenu As CanvasComponent:
             Y: =10
             ZIndex: =1
 
-    Rectangle1 As rectangle:
-        Height: =4
-        Visible: =ThisItem.IsSelected
-        Width: =59
-        X: =16
-        Y: =87
-        ZIndex: =3
-
