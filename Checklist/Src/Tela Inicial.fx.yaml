@@ -74,14 +74,15 @@
     Image1 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =3
+        Height: =83
         Image: =User().Image
         RadiusBottomLeft: =150
         RadiusBottomRight: =150
         RadiusTopLeft: =150
         RadiusTopRight: =150
-        Width: =96
-        X: =4
-        Y: =14
+        Width: =87
+        X: =10
+        Y: =26
         ZIndex: =6
 
     Label2 As label:
