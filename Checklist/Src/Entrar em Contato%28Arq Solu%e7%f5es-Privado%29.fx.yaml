@@ -232,11 +232,9 @@
             ZIndex: =13
 
             DataCardKey70 As label:
-                AutoHeight: =true
-                Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =316
                 Wrap: =false
                 X: =30
                 Y: =10
@@ -338,7 +336,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'Profissionais Disponíveis'],DataSourceInfo.DisplayName,"Cargo")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
+            Height: =88
             Required: =false
             Width: =446
             X: =0
