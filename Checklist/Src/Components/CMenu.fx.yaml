@@ -40,7 +40,6 @@ cMenu As CanvasComponent:
             PaddingTop: =20
             Tooltip: =ThisItem.id
             Width: =81
-            X: =2
             Y: =10
             ZIndex: =1
 

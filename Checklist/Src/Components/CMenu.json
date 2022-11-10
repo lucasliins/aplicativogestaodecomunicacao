@@ -56,7 +56,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div style='\nbackground: #ffffff;\nheight: 300px; \nborder-radius: 6px;\nmargin: 5px; \nbox-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'\n></div>\"",
+            "InvariantScript": "\"<div style='\r\nbackground: #ffffff;\r\nheight: 300px; \r\nborder-radius: 6px;\r\nmargin: 5px; \r\nbox-shadow: rgba(0, 0, 0.24) 0px 3px 8px;'\r\n></div>\"",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -394,7 +394,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "2",
+                "InvariantScript": "0",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -786,7 +786,7 @@
       "ZIndex",
       "Visible"
     ],
-    "LastModifiedTimestamp": "638036395424508933",
+    "LastModifiedTimestamp": "638036871853605790",
     "Name": "cMenu",
     "Rules": [
       {
@@ -851,7 +851,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638036395424508933",
+  "LastModifiedTimestamp": "638036871853605790",
   "Name": "e7cb7330c0d74e5ea104e68ed46c2734",
   "OverridableProperties": {},
   "Version": "638030119030388853"
